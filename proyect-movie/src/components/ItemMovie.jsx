@@ -1,10 +1,12 @@
 import DefaultImage from "/NoImage.png";
+import { Link } from "react-router-dom";
 
 const ItemMovie = ({ id, title, type, year, poster }) => {
 
     let image = poster === "N/A" ? DefaultImage : poster;
 
     return (
+        <Link to={`/movies/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>
         <article>
             <div className="item-movie" style= {{ backgroundImage: `url(${image})`}}>
                  <div className="info">
@@ -13,6 +15,7 @@ const ItemMovie = ({ id, title, type, year, poster }) => {
                  </div>
             </div>
         </article>
+        </Link>
     );
 }
 
