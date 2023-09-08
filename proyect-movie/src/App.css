@@ -92,7 +92,8 @@ body{
     justify-content: center;
 }
 .single-movie .single-info {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     text-align: left;
     background-color: #ffffff9e;
     padding: 13px 25px;
@@ -140,3 +141,34 @@ p.author a {
     color: #fff;
 }
 
+@media (max-width: 375px){
+
+.App{
+    margin: 0;
+    padding: 0;
+}
+    form{
+        display:flex
+    }
+
+    .single-movie > img{
+        width: 100% ;
+    }
+    .single-movie {
+        flex-direction: column;
+        box-sizing: content-box;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .single-info{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .single-movie .single-info h2{
+    font-size: 25px;
+    }
+}
