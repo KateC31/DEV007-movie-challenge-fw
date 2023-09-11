@@ -1,5 +1,5 @@
 // Importa el componente 'FormSearch' desde el archivo './formSearch'.
-import FormSearch from "./formSearch";
+import FormSearch from "./FormSearch";
 // Importa el componente 'Movies' desde el archivo './Movies'.
 import Movies from "./Movies";
 
